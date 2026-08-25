@@ -4,6 +4,7 @@ import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import PageWrapper from './components/layout/PageWrapper'
 import ScrollToTop from './components/layout/ScrollToTop'
+import LanguageSwitcher from './components/ui/LanguageSwitcher'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -16,6 +17,7 @@ export default function App() {
     <div className="flex min-h-screen flex-col antialiased">
       <ScrollToTop />
       <Header />
+      <LanguageSwitcher />
       <main className="flex-grow">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
